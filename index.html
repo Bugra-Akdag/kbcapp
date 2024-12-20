@@ -49,13 +49,12 @@
       gap: 10px;
     }
 
-    .card {
-      background-color: #1f1f1f;
-      border-radius: 8px;
-      padding: 10px;
-      flex: 1;
-      text-align: center;
-    }
+    .card img {
+  width: 100%; /* Ensures the image spans the full width of the card */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px 8px 0 0; /* Optional: round the top corners only */
+  margin: 0; /* Removes any unintended gaps around the image */
+}
 
     .card img {
       width: 100%;
