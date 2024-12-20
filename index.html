@@ -56,6 +56,13 @@
   margin: 0; /* Removes any unintended gaps around the image */
 }
 
+.text-muted {
+  color: #888; /* Grey color for muted text */
+  font-size: 0.9rem; /* Smaller font size */
+  line-height: 1.4; /* Optional: Adjust line spacing for readability */
+  margin: 0; /* Optional: Reset default margins for uniformity */
+}
+
     .card img {
       width: 100%;
       border-radius: 8px;
@@ -97,22 +104,22 @@
 </head>
 <body>
   <div class="search-bar">
-    <img src="search-icon.png" alt="Search" width="20">
+    <img src="pictures/search.png" alt="Search" width="20">
     <input type="text" placeholder="Hoe kan KATE je helpen?">
   </div>
 
   <div class="card-container">
     <div class="card">
       <img src="pictures/bugra.jpg"Profile">
-      <p>AKDAG BUGRA</p>
+      <p class=".text-muted">AKDAG BUGRA</p>
       <p>3075,44 EUR</p>
     </div>
     <div class="card">
-      <p>Spaar</p>
+      <p class=".text-muted">Spaar</p>
       <p>3000 EUR</p>
     </div>
     <div class="card">
-      <p>AKDAG BUGRA BUSINESS</p>
+      <p class=".text-muted">AKDAG BUGRA BUSINESS</p>
       <p>431,23 EUR</p>
     </div>
   </div>
