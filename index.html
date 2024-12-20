@@ -76,8 +76,11 @@
 .text-muted {
   color: #888; /* Grey color for muted text */
   font-size: 0.9rem; /* Smaller font size */
-  line-height: 1.4; /* Optional: Adjust line spacing for readability */
-  margin: 0; /* Optional: Reset default margins for uniformity */
+  line-height: 1.4; /* Adjust line spacing for readability */
+  margin: 0; /* Optional: Reset default margins */
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  overflow: hidden; /* Hides any overflowing text */
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflowing text */
 }
 
     .card img {
