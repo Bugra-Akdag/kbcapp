@@ -12,7 +12,15 @@
       margin: 0;
       padding: 0;
     }
-
+.card-container .card:first-child::after {
+  content: "";
+  display: block;
+  width: 100%; /* Full width of the card */
+  height: 4px; /* Height of the blue bar */
+  background-color: #0066cc; /* Blue color */
+  border-radius: 0 0 8px 8px; /* Round the bottom corners to match the card */
+  margin-top: 10px; /* Space above the bar (optional) */
+}
     .header {
       display: flex;
       justify-content: space-between;
@@ -75,7 +83,7 @@
 
 .text-muted {
   color: #888; /* Grey color for muted text */
-  font-size: 0.9rem; /* Smaller font size */
+  font-size: 0.4rem; /* Smaller font size */
   line-height: 1.4; /* Adjust line spacing for readability */
   margin: 0; /* Optional: Reset default margins */
   white-space: nowrap; /* Prevents text from wrapping to the next line */
