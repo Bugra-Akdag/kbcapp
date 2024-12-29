@@ -76,7 +76,6 @@
   max-width: calc(33.333% - 10px); /* Prevents cards from exceeding their container */
   /* Add a subtle drop shadow behind the card */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  overflow: hidden;
 }
 .card-container {
   display: flex;
@@ -86,15 +85,11 @@
 }
 
 .card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;       /* Ensures the image is a perfect square */
-  object-fit: cover;         /* Crop/zoom to fill the area without distortion */
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  display: block;            /* Eliminates a small space below images in some browsers */
-}
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+      margin-bottom: 5px;
+    }
 
 .text-muted {
   color: #888; /* Grey color for muted text */
@@ -151,8 +146,9 @@
 
 .money{
     color: #0d2a50;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     text-align: left;
+    font-weight: bold;
 }
   </style>
 </head>
