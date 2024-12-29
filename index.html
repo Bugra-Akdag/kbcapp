@@ -128,7 +128,7 @@
       margin-bottom: 5px;
     }
 h2{
-    font-size: 0.72rem; /* Smaller font size */
+    font-size: 0.88rem; /* Smaller font size */
     color: #0d2a50;
 }
 
@@ -191,6 +191,24 @@ h2{
     text-align: left;
     font-weight: bold;
 }
+
+.info-card {
+  background-color: #fff;      /* White background to stand out */
+  border-radius: 8px;          /* Rounded corners */
+  padding: 15px;               /* Spacing inside the card */
+  margin: 10px 0;              /* Spacing above/below the card */
+  color: #000;                 /* Dark text on white background */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+  display: flex;               /* If you have an icon + text side by side */
+  align-items: center;         /* Vertically center icon and text */
+}
+
+/* Optional: style the icon in the card if you have one */
+.info-card .card-icon {
+  margin-right: 10px;  /* space between icon and text */
+  width: 24px;         /* or whatever size you need */
+  height: 24px;        /* keep it square if you want */
+}
   </style>
 </head>
 <body>
@@ -223,22 +241,22 @@ h2{
     </div>
   </div>
 
-  <div class="section">
+  <div class="info-card">
     <h2>Voor jou</h2>
     <p>Je bent helemaal mee!</p>
   </div>
 
-  <div class="section">
+  <div class="info-card">
     <h2>Inkomsten en uitgaven</h2>
     <p>Kate stelt voor: een nieuwe, leuke manier om te sparen voor je dromen.</p>
   </div>
 
-  <div class="section">
+  <div class="info-card">
     <h2>Inkomsten en uitgaven</h2>
     <p>Je loon is gestort. Vergelijk vlot je laatste loonuitbetalingen.</p>
   </div>
 
-  <div class="section">
+  <div class="info-card">
     <h2>Kate Coins</h2>
     <p>Krijg straffe kortingen bij KBC en zijn partners!</p>
   </div>
