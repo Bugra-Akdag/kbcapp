@@ -6,6 +6,24 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>KBC App</title>
   <style>
+.top-bar {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.settings-btn {
+  background-color: #fff;
+  border: 2px solid #0097db; /* Blue border */
+  border-radius: 50%;        /* Perfect circle */
+  padding: 10px;
+  cursor: pointer;           /* Makes it look clickable */
+  outline: none;            /* Remove default focus outline if desired */
+  display: flex;            /* So we can center the icon inside */
+  align-items: center;
+  justify-content: center;
+}
+
     body {
       font-family: Arial, sans-serif;
       background-color: #fff;
@@ -45,15 +63,24 @@
     .search-bar {
   display: flex;
   align-items: center;
-  margin: 10px 20px;
   background-color: #fff;
   padding: 10px 15px;
   
-  /* Extremely large border-radius for a pill shape */
-  border-radius: 9999px; 
-  
-  /* Add a border: 2px solid, using your preferred color */
-  border: 0.5px solid #0097db; 
+  /* Extremely large border-radius for the pill shape */
+  border-radius: 9999px;
+
+  /* Add a border around the search bar only */
+  border: 2px solid #0097db;
+
+  /* Take up remaining horizontal space */
+  flex: 1;
+
+  /* A little spacing between the button and the search bar */
+  margin-left: 10px;
+}
+
+.search-bar .search-icon {
+  margin-right: 10px;
 }
 
 .search-bar img {
@@ -74,7 +101,6 @@
   outline: none;
   color: #000;
   flex: 1;
-  margin-left: 5px;
 }
     .card {
   background-color: #ffffff;
